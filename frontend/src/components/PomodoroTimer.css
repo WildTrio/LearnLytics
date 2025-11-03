@@ -1,0 +1,97 @@
+.pomodoro-timer {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 16px;
+  padding: 24px;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.pomodoro-title {
+  margin: 0 0 20px 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.timer-display {
+  margin: 24px 0;
+}
+
+.timer-time {
+  font-size: 4rem;
+  font-weight: bold;
+  font-family: 'Courier New', monospace;
+  display: block;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.timer-controls {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.timer-btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.timer-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.timer-btn:active {
+  transform: translateY(0);
+}
+
+.timer-btn-start {
+  background: #10b981;
+  color: white;
+}
+
+.timer-btn-start:hover {
+  background: #059669;
+}
+
+.timer-btn-pause {
+  background: #f59e0b;
+  color: white;
+}
+
+.timer-btn-pause:hover {
+  background: #d97706;
+}
+
+.timer-btn-reset {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  backdrop-filter: blur(10px);
+}
+
+.timer-btn-reset:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+  .timer-time {
+    font-size: 3rem;
+  }
+
+  .pomodoro-title {
+    font-size: 1.25rem;
+  }
+
+  .timer-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
